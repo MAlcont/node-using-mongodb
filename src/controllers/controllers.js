@@ -11,7 +11,7 @@ export const addnewProduct = (req, res) => {
             res.send(err);
         }
         res.json(Product);
-    });
+    })
 }
 
 export const getProducts = (req, res) => {
@@ -20,7 +20,7 @@ export const getProducts = (req, res) => {
         res.send(err);
     }
     res.json(Product);
-  });
+  })
 }
 
 export const getProductWithID = (req, res) => {
@@ -29,7 +29,7 @@ export const getProductWithID = (req, res) => {
         res.send(err);
     }
     res.json(Product);
-  });
+  })
 }
 
 export const updateProduct = (req, res) => {
@@ -39,7 +39,7 @@ export const updateProduct = (req, res) => {
         res.send(err);
     }
     res.json(Product);
-  });
+  })
 
 }
 
@@ -49,5 +49,5 @@ export const deleteProduct = (req, res) => {
         res.send(err);
     }
     res.json({message: 'successfully deleted product'});
-  });
+  })
 }
